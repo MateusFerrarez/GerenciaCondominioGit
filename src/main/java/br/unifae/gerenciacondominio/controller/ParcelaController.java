@@ -67,7 +67,7 @@ public class ParcelaController {
         parcelaDao.updateParcelaResidencia(tempParcel);
     }
 
-    public void getParcelaResidencia(Long idParcela, JTextField txtParcel, JTextField txtPago, JFormattedTextField dtParcela) throws SQLException {
+    public void fillParcelaResidencia(Long idParcela, JTextField txtParcel, JTextField txtPago, JFormattedTextField dtParcela) throws SQLException {
         final ParcelaDAO parcelaDao = new ParcelaDAO(dbConnection);
         final ParcelaResidencia tempParcel = parcelaDao.getParcelaByIdParcela(idParcela);
         txtParcel.setText(String.valueOf(tempParcel.getVlReceber()));

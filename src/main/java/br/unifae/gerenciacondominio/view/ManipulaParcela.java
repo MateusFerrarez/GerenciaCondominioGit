@@ -42,7 +42,7 @@ public class ManipulaParcela extends JDialog {
         this.idParcela = idParcela;
 
         try {
-            parcelaController.getParcelaResidencia(idParcela, txtReceber, txtRecebido, txtDt);
+            parcelaController.fillParcelaResidencia(idParcela, txtReceber, txtRecebido, txtDt);
         } catch (SQLException exception) {
             System.out.println("ERROA O PREENCHER INFO DA PARCELA - MSG - " + exception);
         }
